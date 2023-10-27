@@ -8,52 +8,26 @@ body {
 }
 
 .header {
-  background-color: #2C3E50;
+  background-color: #34495E;
   color: white;
-  padding: 1rem 0;
+  padding: 2rem 0;
   text-align: center;
+  background-image: linear-gradient(to bottom right, #34495E, #2C3E50);
 }
 
 .header h1 {
-  margin: 0;
-  font-weight: 300;
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.nav-bar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav-bar a:hover {
-  color: #2C3E50;
-}
-
-.content-section {
-  padding: 2rem 0;
-  text-align: center;
+.header p {
   max-width: 800px;
   margin: 0 auto;
+  font-size: 1.1rem;
 }
 
-.content-section h2 {
-  font-weight: 300;
-  font-size: 2rem;
-  color: #2C3E50;
-}
-
-.content-section p {
-  color: #555;
-}
+/* ... [rest of your styles] ... */
 
 .footer {
   text-align: center;
@@ -62,54 +36,3 @@ body {
   color: white;
   font-size: 0.8rem;
 }
-
-.search-box {
-  padding: 0.5rem;
-  width: 300px;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-
-.search-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  background-color: #2C3E50;
-  color: white;
-  border: none;
-}
-
-.search-button:hover {
-  background-color: #34495E;
-}
-
-.job-listings {
-  margin-top: 1rem;
-}
-
-.job {
-  background-color: white;
-  padding: 1rem;
-  margin-top: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.job h3 {
-  margin-top: 0;
-}
-
-.apply-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  background-color: #27ae60;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.apply-button:hover {
-  background-color: #2ecc71;
-}
-

@@ -9,78 +9,65 @@
 </head>
 <body>
   <header>
-    <h1>GradCAS: Simplifying Your Graduate Scheme Applications</h1>
+    <h1>Graduate Centralized Application System</h1>
+    <p>Your gateway to a future of opportunities</p>
   </header>
 
   <nav>
-    <div class="tab">
-      <button class="tab-links" onclick="openTab(event, 'job-search')" id="defaultOpen">Job Search</button>
-      <button class="tab-links" onclick="openTab(event, 'for-employers')">For Employers</button>
-      <button class="tab-links" onclick="openTab(event, 'resources')">Resources</button>
-      <button class="tab-links" onclick="openTab(event, 'about-us')">About Us</button>
-      <button class="tab-links" onclick="openTab(event, 'application-process')">Application Process</button>
-    </div>
+    <button id="defaultOpen" class="tab-links" onclick="openTab(event, 'job-search')">Job Search</button>
+    <button class="tab-links" onclick="openTab(event, 'for-employers')">For Employers</button>
+    <button class="tab-links" onclick="openTab(event, 'resources')">Resources</button>
+    <button class="tab-links" onclick="openTab(event, 'about-us')">About Us</button>
+    <button class="tab-links" onclick="openTab(event, 'application-process')">Application Process</button>
   </nav>
 
-  <section>
-    <!-- Job Search -->
-    <div id="job-search" class="tab-content">
-      <h2>Job Search</h2>
-      <p>Find and apply to graduate schemes from top companies.</p>
-      <!-- Add more content here -->
-    </div>
-
-    <!-- For Employers -->
-    <div id="for-employers" class="tab-content">
-      <h2>For Employers</h2>
-      <p>Learn how GradCAS can help you find the perfect candidates for your graduate schemes.</p>
-      <!-- Add more content here -->
-    </div>
-
-    <!-- Resources -->
-    <div id="resources" class="tab-content">
-      <h2>Resources</h2>
-      <p>Explore a variety of resources to help you through the application process.</p>
-      <!-- Add more content here -->
-    </div>
-
-    <!-- About Us -->
-    <div id="about-us" class="tab-content">
-      <h2>About Us</h2>
-      <p>Learn more about GradCAS and our mission to simplify the graduate scheme application process.</p>
-      <!-- Add more content here -->
-    </div>
-
-    <!-- Application Process -->
-    <div id="application-process" class="tab-content">
-      <h2>Application Process</h2>
-      <p>Understand how the GradCAS application process works:</p>
-      <div class="accordion">1. Register and Create Your Profile</div>
-      <div class="panel">
-        <p>Start by registering an account and creating a comprehensive profile.</p>
-      </div>
-      <div class="accordion">2. Search and Select Graduate Schemes</div>
-      <div class="panel">
-        <p>Browse through available graduate schemes and select the ones you wish to apply to.</p>
-      </div>
-      <div class="accordion">3. Submit Your Application</div>
-      <div class="panel">
-        <p>Submit your application and wait for employers to review it.</p>
-      </div>
-      <div class="accordion">4. Track Your Application</div>
-      <div class="panel">
-        <p>Track the progress of your application through our user-friendly dashboard.</p>
-      </div>
-      <div class="accordion">5. Attend Interviews</div>
-      <div class="panel">
-        <p>If selected, attend interviews and further selection processes.</p>
-      </div>
-    </div>
+  <section id="job-search" class="tab-content">
+    <h2>Job Search</h2>
+    <p>Find your dream job from our extensive database of graduate schemes.</p>
+    <!-- Add more content here as needed -->
   </section>
 
-  <footer>
-    <p>Copyright &copy; 2023 GradCAS</p>
-  </footer>
+  <section id="for-employers" class="tab-content">
+    <h2>For Employers</h2>
+    <p>Find the perfect candidate for your graduate scheme.</p>
+    <!-- Add more content here as needed -->
+  </section>
+
+  <section id="resources" class="tab-content">
+    <h2>Resources</h2>
+    <p>Explore our resources to prepare for your application.</p>
+    <!-- Add more content here as needed -->
+  </section>
+
+  <section id="about-us" class="tab-content">
+    <h2>About Us</h2>
+    <p>Learn more about Graduate Centralized Application System.</p>
+    <!-- Add more content here as needed -->
+  </section>
+
+  <section id="application-process" class="tab-content">
+    <h2>Application Process</h2>
+    <button class="accordion">Step 1: Registration</button>
+    <div class="panel">
+      <p>Register an account to start your application process.</p>
+    </div>
+    <button class="accordion">Step 2: Profile Setup</button>
+    <div class="panel">
+      <p>Set up your profile with all the necessary details.</p>
+    </div>
+    <button class="accordion">Step 3: Job Search</button>
+    <div class="panel">
+      <p>Search and apply to graduate schemes that suit your profile.</p>
+    </div>
+    <button class="accordion">Step 4: Application Submission</button>
+    <div class="panel">
+      <p>Submit your applications to the chosen graduate schemes.</p>
+    </div>
+    <button class="accordion">Step 5: Track Application</button>
+    <div class="panel">
+      <p>Track the progress of your applications.</p>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

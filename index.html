@@ -1,86 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GradCAS: Graduate Scheme Central Application Service</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Main Header -->
-  <div class="header">
-    <h1>GradCAS: Graduate Scheme Central Application Service</h1>
-    <p>Streamlining your journey from education to employment. Apply to multiple graduate schemes with a single application. Discover your future today!</p>
-  </div>
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  <!-- Navigation Bar -->
-  <div class="nav-bar">
-    <a href="#job-search">Job Search</a>
-    <a href="#for-employers">For Employers</a>
-    <a href="#resources">Resources</a>
-    <a href="#application-process">Application Process</a>
-    <a href="#contact">Contact</a>
-  </div>
+body {
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+}
 
-  <!-- Job Search Section -->
-  <div class="content-section" id="job-search">
-    <h2>Job Search</h2>
-    <button class="accordion">Search Tips</button>
-    <div class="panel">
-      <p>Use keywords to find the most relevant graduate schemes. Don't forget to set your location and industry preferences!</p>
-    </div>
-    <!-- You can include more interactive elements like sliders, galleries, etc., here -->
-  </div>
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
 
-  <!-- For Employers Section -->
-  <div class="content-section" id="for-employers">
-    <h2>For Employers</h2>
-    <button class="accordion">Posting Guidelines</button>
-    <div class="panel">
-      <p>Ensure your graduate scheme descriptions are clear and concise. Highlight the key skills and qualifications required.</p>
-    </div>
-    <!-- Additional interactive content for employers can go here -->
-  </div>
+/* Header */
+header {
+  background: #4B3C39; /* Hemp Green */
+  color: #F4F0E4; /* Oatmeal */
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #F4F0E4 3px solid;
+}
 
-  <!-- Resources Section -->
-  <div class="content-section" id="resources">
-    <h2>Resources</h2>
-    <button class="accordion">CV Writing</button>
-    <div class="panel">
-      <p>Check out our guides and templates to create a standout CV!</p>
-    </div>
-    <button class="accordion">Interview Preparation</button>
-    <div class="panel">
-      <p>Explore common interview questions and best practices to ace your interviews.</p>
-    </div>
-  </div>
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
 
-  <!-- Application Process Section -->
-  <div class="content-section" id="application-process">
-    <h2>Application Process</h2>
-    <button class="accordion">Step 1: Registration</button>
-    <div class="panel">
-      <p>Create your GradCAS account to start applying to graduate schemes.</p>
-    </div>
-    <button class="accordion">Step 2: Profile Completion</button>
-    <div class="panel">
-      <p>Complete your profile with your education history, skills, and experience.</p>
-    </div>
-    <!-- Add more steps as necessary -->
-  </div>
+header ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
 
-  <!-- Contact Section -->
-  <div class="content-section" id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or need assistance, feel free to <a href="mailto:support@gradcas.com">email us</a>.</p>
-  </div>
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
 
-  <!-- Footer -->
-  <div class="footer">
-    <p>© 2023 GradCAS - Helping Graduates Transition to Professionals</p>
-  </div>
+header #branding {
+  display: inline;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a {
+  font-weight: bold;
+  color: #F9D342; /* Pale Lemon */
+  padding: 0;
+  border: none;
+}
+
+header a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Main */
+.main {
+  padding: 30px 0;
+}
+
+.main h2 {
+  color: #333;
+}
+
+.main p {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+/* Accordion Styles */
+.accordion {
+  background-color: #F4F0E4;
+  color: #333;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #4B3C39;
+  color: #F4F0E4;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer i {
+  color: #F9D342;
+}
+
+footer a {
+  color: #F4F0E4;
+  text-decoration: none;
+}
+
+/* Application Process Graphics */
+.process-step {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.process-step div {
+  width: 100px;
+  height: 100px;
+  background-color: #F9D342; /* Pale Lemon */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.process-line {
+  height: 10px;
+  flex-grow: 2;
+  background-color: #4B3C39; /* Hemp Green */
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}

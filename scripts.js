@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    console.log("DOM fully loaded and parsed");
+
     // Accordion Functionality
     var acc = document.getElementsByClassName("accordion");
     for (var i = 0; i < acc.length; i++) {
@@ -15,6 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Tab Functionality
     window.openTab = function (tabName) {
+        console.log("Trying to open tab: ", tabName);
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tab-content");
         for (i = 0; i < tabcontent.length; i++) {

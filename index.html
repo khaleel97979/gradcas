@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GradCAS</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradCAS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Graduate Centralized Application System</h1>
-    <p>Your gateway to a future of opportunities</p>
-  </header>
+    <header>
+        <h1>Graduate Centralized Application System</h1>
+        <p>Your gateway to a future of opportunities</p>
+    </header>
 
-  <nav>
-    <button id="defaultOpen" class="tab-links" onclick="openTab(event, 'job-search')">Job Search</button>
-    <button class="tab-links" onclick="openTab(event, 'for-employers')">For Employers</button>
-    <button class="tab-links" onclick="openTab(event, 'resources')">Resources</button>
-    <button class="tab-links" onclick="openTab(event, 'about-us')">About Us</button>
-    <button class="tab-links" onclick="openTab(event, 'application-process')">Application Process</button>
-  </nav>
+    <nav>
+        <button id="defaultOpen" class="tab-links" onclick="openTab('job-search')">Job Search</button>
+        <button class="tab-links" onclick="openTab('for-employers')">For Employers</button>
+        <button class="tab-links" onclick="openTab('resources')">Resources</button>
+        <button class="tab-links" onclick="openTab('about-us')">About Us</button>
+        <button class="tab-links" onclick="openTab('application-process')">Application Process</button>
+    </nav>
 
-  <section id="job-search" class="tab-content">
-    <h2>Job Search</h2>
-    <p>Find your dream job from our extensive database of graduate schemes.</p>
-    <!-- Add more content here as needed -->
-  </section>
+    <div id="tab-content-container">
+        <section id="job-search" class="tab-content">
+            <h2>Job Search</h2>
+            <p>Find your dream job from our extensive database of graduate schemes.</p>
+        </section>
 
-  <section id="for-employers" class="tab-content">
-    <h2>For Employers</h2>
-    <p>Find the perfect candidate for your graduate scheme.</p>
-    <!-- Add more content here as needed -->
-  </section>
+        <section id="for-employers" class="tab-content">
+            <h2>For Employers</h2>
+            <p>Find the perfect candidate for your graduate scheme.</p>
+        </section>
 
-  <section id="resources" class="tab-content">
-    <h2>Resources</h2>
-    <p>Explore our resources to prepare for your application.</p>
-    <!-- Add more content here as needed -->
-  </section>
+        <section id="resources" class="tab-content">
+            <h2>Resources</h2>
+            <p>Explore our resources to prepare for your application.</p>
+        </section>
 
-  <section id="about-us" class="tab-content">
-    <h2>About Us</h2>
-    <p>Learn more about Graduate Centralized Application System.</p>
-    <!-- Add more content here as needed -->
-  </section>
+        <section id="about-us" class="tab-content">
+            <h2>About Us</h2>
+            <p>Learn more about Graduate Centralized Application System.</p>
+        </section>
 
-  <section id="application-process" class="tab-content">
-    <h2>Application Process</h2>
-    <button class="accordion">Step 1: Registration</button>
-    <div class="panel">
-      <p>Register an account to start your application process.</p>
+        <section id="application-process" class="tab-content">
+            <h2>Application Process</h2>
+            <button class="accordion">Step 1: Registration</button>
+            <div class="panel">
+                <p>Register an account to start your application process.</p>
+            </div>
+            <button class="accordion">Step 2: Profile Setup</button>
+            <div class="panel">
+                <p>Set up your profile with all the necessary details.</p>
+            </div>
+            <button class="accordion">Step 3: Job Search</button>
+            <div class="panel">
+                <p>Search and apply to graduate schemes that suit your profile.</p>
+            </div>
+            <button class="accordion">Step 4: Application Submission</button>
+            <div class="panel">
+                <p>Submit your applications to the chosen graduate schemes.</p>
+            </div>
+            <button class="accordion">Step 5: Track Application</button>
+            <div class="panel">
+                <p>Track the progress of your applications.</p>
+            </div>
+        </section>
     </div>
-    <button class="accordion">Step 2: Profile Setup</button>
-    <div class="panel">
-      <p>Set up your profile with all the necessary details.</p>
-    </div>
-    <button class="accordion">Step 3: Job Search</button>
-    <div class="panel">
-      <p>Search and apply to graduate schemes that suit your profile.</p>
-    </div>
-    <button class="accordion">Step 4: Application Submission</button>
-    <div class="panel">
-      <p>Submit your applications to the chosen graduate schemes.</p>
-    </div>
-    <button class="accordion">Step 5: Track Application</button>
-    <div class="panel">
-      <p>Track the progress of your applications.</p>
-    </div>
-  </section>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

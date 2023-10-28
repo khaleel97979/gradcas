@@ -1,74 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ... [other head elements] ... -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GradCAS: Graduate Scheme Central Application Service</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Main Header -->
   <div class="header">
-  <h1>GradCAS</h1>
-  <p>Streamline your job search with GradCAS. Apply to multiple graduate schemes with a single application. Discover opportunities, connect with employers, and kickstart your career today!</p>
-</div>
+    <h1>GradCAS: Graduate Scheme Central Application Service</h1>
+    <p>Streamlining your journey from education to employment. Apply to multiple graduate schemes with a single application. Discover your future today!</p>
+  </div>
+
+  <!-- Navigation Bar -->
   <div class="nav-bar">
-    <a href="#home">Home</a>
     <a href="#job-search">Job Search</a>
     <a href="#for-employers">For Employers</a>
     <a href="#resources">Resources</a>
-    <a href="#contact-us">Contact Us</a>
-    <a href="#login-signup">Login/Sign Up</a>
+    <a href="#application-process">Application Process</a>
+    <a href="#contact">Contact</a>
   </div>
-  <div id="home" class="content-section">
-    <h2>Welcome to GradCAS</h2>
-    <p>Your gateway to graduate schemes and job opportunities. Discover your perfect job and take the next step in your career.</p>
-  </div>
-  <div id="job-search" class="content-section">
+
+  <!-- Job Search Section -->
+  <div class="content-section" id="job-search">
     <h2>Job Search</h2>
-    <input type="text" class="search-box" placeholder="Search for jobs or companies">
-    <button class="search-button">Search</button>
-    <div class="job-listings">
-      <div class="job">
-        <h3>Software Engineer</h3>
-        <p>At XYZ Corp, San Francisco, CA</p>
-        <button class="apply-button">Apply Now</button>
-      </div>
-      <div class="job">
-        <h3>Marketing Specialist</h3>
-        <p>At ABC Inc., New York, NY</p>
-        <button class="apply-button">Apply Now</button>
-      </div>
-      <!-- ...[more job listings]... -->
-    </div>
+    <p>Find and apply to a wide range of graduate schemes tailored to your skills and interests. Utilize filters to narrow down your search and find the perfect fit.</p>
   </div>
-  <div id="for-employers" class="content-section">
+
+  <!-- For Employers Section -->
+  <div class="content-section" id="for-employers">
     <h2>For Employers</h2>
-    <p>Learn how you can find the perfect candidate for your company. Join our network and connect with thousands of top graduates.</p>
+    <p>Connect with talented graduates ready to bring fresh perspectives and innovation to your team. Post your graduate schemes and manage applications seamlessly.</p>
   </div>
-  <div id="resources" class="content-section">
+
+  <!-- Resources Section -->
+  <div class="content-section" id="resources">
     <h2>Resources</h2>
-    <p>Find articles, tips, and tools to help you succeed in your job search. From resume writing to interview preparation, we've got you covered.</p>
+    <p>Access valuable resources to help you navigate the application process, prepare for interviews, and make informed decisions about your career.</p>
   </div>
-  <div id="contact-us" class="content-section">
+
+  <!-- Application Process Section -->
+  <div class="content-section" id="application-process">
+    <h2>Application Process</h2>
+    <p>Submit your application form, CV, and tailored cover letters all in one go. Provide references and complete any required assessments to strengthen your application. Our system ensures that all necessary information is included for each scheme you apply to.</p>
+    <p>After submission, companies will review your application and respond with offers or rejections. You can then accept an offer, which will automatically withdraw your other applications. Use feedback from your applications to improve for the future.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="content-section" id="contact">
     <h2>Contact Us</h2>
-    <p>Have questions? Get in touch with us! Fill out our contact form or reach out to us directly at support@gradcas.com.</p>
+    <p>If you have any questions or need assistance, feel free to <a href="mailto:support@gradcas.com">email us</a>.</p>
   </div>
-  <div id="login-signup" class="content-section">
-    <h2>Login/Sign Up</h2>
-    <p>Create an account or log in to access personalized features and streamline your job application process.</p>
-  </div>
+
+  <!-- Footer -->
   <div class="footer">
-    <p>© 2023 GradCAS</p>
+    <p>© 2023 GradCAS - Helping Graduates Transition to Professionals</p>
   </div>
-    <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-    });
-  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>

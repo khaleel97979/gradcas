@@ -1,10 +1,19 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-  document.querySelectorAll('.nav-bar a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+  // Accordion Functionality
+  var acc = document.getElementsByClassName("accordion");
+  for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
     });
-  });
+  }
+
+  // Add any other JavaScript functionalities below
+  // ...
+
 });

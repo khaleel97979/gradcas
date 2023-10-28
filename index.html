@@ -1,166 +1,98 @@
-/* Reset some default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>GradCAS</title>
+</head>
+<body>
 
-body {
-  line-height: 1.6;
-  font-size: 18px;
-  color: #333;
-}
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Grad</span>CAS</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="javascript:void(0);" onclick="openTab('home')">Home</a></li>
+          <li><a href="javascript:void(0);" onclick="openTab('job-search')">Job Search</a></li>
+          <li><a href="javascript:void(0);" onclick="openTab('employers')">For Employers</a></li>
+          <li><a href="javascript:void(0);" onclick="openTab('resources')">Resources</a></li>
+          <li><a href="javascript:void(0);" onclick="openTab('about-us')">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
+  <section class="container">
+    <!-- Home Section -->
+    <div id="home" class="tab-content active">
+      <h2>Application Process</h2>
+      <div class="process-step">
+        <div>1</div>
+        <div class="process-line"></div>
+        <div>2</div>
+        <div class="process-line"></div>
+        <div>3</div>
+        <div class="process-line"></div>
+        <div>4</div>
+      </div>
+      <p>Follow the steps from 1 to 4 to complete your application process. Each number represents a different stage in the process.</p>
 
-/* Header */
-header {
-  background: #4B3C39; /* Hemp Green */
-  color: #F4F0E4; /* Oatmeal */
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #F4F0E4 3px solid;
-}
+      <button class="accordion">Step 1: Choose Schemes</button>
+      <div class="panel">
+        <p>Select the graduate schemes you are interested in from a wide range of companies.</p>
+      </div>
+      <button class="accordion">Step 2: Fill Application</button>
+      <div class="panel">
+        <p>Fill out a universal application form that will be sent to all chosen schemes.</p>
+      </div>
+      <button class="accordion">Step 3: Track Progress</button>
+      <div class="panel">
+        <p>Keep track of your application's progress and respond to any additional requirements.</p>
+      </div>
+      <button class="accordion">Step 4: Receive Offers</button>
+      <div class="panel">
+        <p>Receive responses from schemes, including any offers or invitations to interview.</p>
+      </div>
+    </div>
 
-header a {
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-}
+    <!-- Other Sections -->
+    <!-- Job Search -->
+    <div id="job-search" class="tab-content">
+      <h2>Job Search</h2>
+      <p>Find the right job for you.</p>
+      <!-- Add more content here -->
+    </div>
 
-header ul {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
+    <!-- For Employers -->
+    <div id="employers" class="tab-content">
+      <h2>For Employers</h2>
+      <p>Learn how GradCAS can help you find the perfect candidates for your graduate schemes.</p>
+      <!-- Add more content here -->
+    </div>
 
-header li {
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
+    <!-- Resources -->
+    <div id="resources" class="tab-content">
+      <h2>Resources</h2>
+      <p>Explore a variety of resources to help you through the application process.</p>
+      <!-- Add more content here -->
+    </div>
 
-header #branding {
-  display: inline;
-}
+    <!-- About Us -->
+    <div id="about-us" class="tab-content">
+      <h2>About Us</h2>
+      <p>Learn more about GradCAS and our mission to simplify the graduate scheme application process.</p>
+      <!-- Add more content here -->
+    </div>
+  </section>
 
-header #branding h1 {
-  margin: 0;
-}
+  <footer>
+    <p>Copyright &copy; 2023 GradCAS</p>
+  </footer>
 
-header nav {
-  float: right;
-  margin-top: 10px;
-}
-
-header .highlight, header .current a {
-  font-weight: bold;
-  color: #F9D342; /* Pale Lemon */
-  padding: 0;
-  border: none;
-}
-
-header a:hover {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-/* Main */
-.main {
-  padding: 30px 0;
-}
-
-.main h2 {
-  color: #333;
-}
-
-.main p {
-  font-size: 18px;
-  line-height: 1.6em;
-}
-
-/* Accordion Styles */
-.accordion {
-  background-color: #F4F0E4;
-  color: #333;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
-/* Footer */
-footer {
-  padding: 20px 0;
-  background-color: #4B3C39;
-  color: #F4F0E4;
-  text-align: center;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer i {
-  color: #F9D342;
-}
-
-footer a {
-  color: #F4F0E4;
-  text-decoration: none;
-}
-
-/* Application Process Graphics */
-.process-step {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.process-step div {
-  width: 100px;
-  height: 100px;
-  background-color: #F9D342; /* Pale Lemon */
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.process-line {
-  height: 10px;
-  flex-grow: 2;
-  background-color: #4B3C39; /* Hemp Green */
-}
-
-/* Tab Content */
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-}
+</body>
+</html>

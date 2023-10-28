@@ -4,72 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
   <title>GradCAS</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <header>
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight">Grad</span>CAS</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="javascript:void(0);" onclick="openTab('home')">Home</a></li>
-          <li><a href="javascript:void(0);" onclick="openTab('job-search')">Job Search</a></li>
-          <li><a href="javascript:void(0);" onclick="openTab('employers')">For Employers</a></li>
-          <li><a href="javascript:void(0);" onclick="openTab('resources')">Resources</a></li>
-          <li><a href="javascript:void(0);" onclick="openTab('about-us')">About Us</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>GradCAS: Simplifying Your Graduate Scheme Applications</h1>
   </header>
 
-  <section class="container">
-    <!-- Home Section -->
-    <div id="home" class="tab-content active">
-      <h2>Application Process</h2>
-      <div class="process-step">
-        <div>1</div>
-        <div class="process-line"></div>
-        <div>2</div>
-        <div class="process-line"></div>
-        <div>3</div>
-        <div class="process-line"></div>
-        <div>4</div>
-      </div>
-      <p>Follow the steps from 1 to 4 to complete your application process. Each number represents a different stage in the process.</p>
-
-      <button class="accordion">Step 1: Choose Schemes</button>
-      <div class="panel">
-        <p>Select the graduate schemes you are interested in from a wide range of companies.</p>
-      </div>
-      <button class="accordion">Step 2: Fill Application</button>
-      <div class="panel">
-        <p>Fill out a universal application form that will be sent to all chosen schemes.</p>
-      </div>
-      <button class="accordion">Step 3: Track Progress</button>
-      <div class="panel">
-        <p>Keep track of your application's progress and respond to any additional requirements.</p>
-      </div>
-      <button class="accordion">Step 4: Receive Offers</button>
-      <div class="panel">
-        <p>Receive responses from schemes, including any offers or invitations to interview.</p>
-      </div>
+  <nav>
+    <div class="tab">
+      <button class="tab-links" onclick="openTab(event, 'job-search')" id="defaultOpen">Job Search</button>
+      <button class="tab-links" onclick="openTab(event, 'for-employers')">For Employers</button>
+      <button class="tab-links" onclick="openTab(event, 'resources')">Resources</button>
+      <button class="tab-links" onclick="openTab(event, 'about-us')">About Us</button>
+      <button class="tab-links" onclick="openTab(event, 'application-process')">Application Process</button>
     </div>
+  </nav>
 
-    <!-- Other Sections -->
+  <section>
     <!-- Job Search -->
     <div id="job-search" class="tab-content">
       <h2>Job Search</h2>
-      <p>Find the right job for you.</p>
+      <p>Find and apply to graduate schemes from top companies.</p>
       <!-- Add more content here -->
     </div>
 
     <!-- For Employers -->
-    <div id="employers" class="tab-content">
+    <div id="for-employers" class="tab-content">
       <h2>For Employers</h2>
       <p>Learn how GradCAS can help you find the perfect candidates for your graduate schemes.</p>
       <!-- Add more content here -->
@@ -88,11 +50,38 @@
       <p>Learn more about GradCAS and our mission to simplify the graduate scheme application process.</p>
       <!-- Add more content here -->
     </div>
+
+    <!-- Application Process -->
+    <div id="application-process" class="tab-content">
+      <h2>Application Process</h2>
+      <p>Understand how the GradCAS application process works:</p>
+      <div class="accordion">1. Register and Create Your Profile</div>
+      <div class="panel">
+        <p>Start by registering an account and creating a comprehensive profile.</p>
+      </div>
+      <div class="accordion">2. Search and Select Graduate Schemes</div>
+      <div class="panel">
+        <p>Browse through available graduate schemes and select the ones you wish to apply to.</p>
+      </div>
+      <div class="accordion">3. Submit Your Application</div>
+      <div class="panel">
+        <p>Submit your application and wait for employers to review it.</p>
+      </div>
+      <div class="accordion">4. Track Your Application</div>
+      <div class="panel">
+        <p>Track the progress of your application through our user-friendly dashboard.</p>
+      </div>
+      <div class="accordion">5. Attend Interviews</div>
+      <div class="panel">
+        <p>If selected, attend interviews and further selection processes.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
     <p>Copyright &copy; 2023 GradCAS</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
